@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191231212914_Models.TagContextv3.cs" />
+    <Compile Remove="Migrations\20191231212914_Models.TagContextv3.Designer.cs" />
+    <Compile Remove="Migrations\20191231213728_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231213728_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231214002_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231214002_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231214656_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231214656_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231214803_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231214803_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231215042_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231215042_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231215136_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231215136_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231215256_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231215256_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231215416_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231215416_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231215804_Models.TagContextv4.cs" />
+    <Compile Remove="Migrations\20191231215804_Models.TagContextv4.Designer.cs" />
+    <Compile Remove="Migrations\20191231220455_Models.TagContextv5.cs" />
+    <Compile Remove="Migrations\20191231220455_Models.TagContextv5.Designer.cs" />
+    <Compile Remove="Migrations\20191231221806_Models.TagContextv2.cs" />
+    <Compile Remove="Migrations\20191231221806_Models.TagContextv2.Designer.cs" />
+    <Compile Remove="Migrations\20191231221930_Models.TagContextv3.cs" />
+    <Compile Remove="Migrations\20191231221930_Models.TagContextv3.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+  </ItemGroup>
+
+
+</Project>
