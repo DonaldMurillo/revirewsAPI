@@ -8,7 +8,7 @@ namespace revirewsAPI.Models
 {
     public class CategoryContext : DbContext
     {
-        public CategoryContext(DbContextOptions options) : base(options)
+        public CategoryContext(DbContextOptions<CategoryContext> options) : base(options)
         {
         }
 

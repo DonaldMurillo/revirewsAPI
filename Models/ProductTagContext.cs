@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace revirewsAPI.Models
 {
-    public class AdminContext : DbContext
+    public class ProductTagContext :DbContext
     {
-        public AdminContext(DbContextOptions<AdminContext> options) : base(options)
+        public ProductTagContext(DbContextOptions<ProductTagContext> options) : base(options)
         {
 
         }
 
-        public DbSet<Admin> Admin { get; set; }
-        
+        public DbSet<ProductTag> ProductTags { get; set; }
+
     }
 }

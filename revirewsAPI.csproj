@@ -31,6 +31,24 @@
     <Compile Remove="Migrations\20191231221806_Models.TagContextv2.Designer.cs" />
     <Compile Remove="Migrations\20191231221930_Models.TagContextv3.cs" />
     <Compile Remove="Migrations\20191231221930_Models.TagContextv3.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104171635_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104171635_ProductContextv1.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104171914_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104171914_ProductContextv1.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104172559_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104172559_ProductContextv1.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104173047_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104173047_ProductContextv1.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104173151_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104173151_ProductContextv1.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104173337_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104173337_ProductContextv1.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104173510_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104173510_ProductContextv1.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104173745_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104173745_ProductContextv1.Designer.cs" />
+    <Compile Remove="Migrations\Product\20200104173913_ProductContextv1.cs" />
+    <Compile Remove="Migrations\Product\20200104173913_ProductContextv1.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

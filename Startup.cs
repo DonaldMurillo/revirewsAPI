@@ -22,6 +22,7 @@ namespace revirewsAPI
             Configuration = configuration;
         }
 
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -32,8 +33,22 @@ namespace revirewsAPI
             services.AddDbContext<AdminContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<CategoryContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<ProductContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ProductReviewContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ProductTagContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
             services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                builder =>
+                {
+                    builder.WithOrigins("https://localhost:44374",
+                                        "http://localhost:3000")
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod();
+                });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +64,8 @@ namespace revirewsAPI
             app.UseRouting();
 
             app.UseAuthorization();
+            //added to allow request form same origin
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseEndpoints(endpoints =>
             {

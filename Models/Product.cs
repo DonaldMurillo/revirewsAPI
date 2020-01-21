@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace revirewsAPI.Models
         public double Price { get; set; }
 
         public long CategoryId { get; set; }
-        [ForeignKey("CategoryID")]
+        [ForeignKey("CategoryId")]
         public Category Category { get; set; }
 
     }
