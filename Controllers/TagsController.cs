@@ -24,7 +24,17 @@ namespace revirewsAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Tag>>> GetTags()
         {
+            //Linq test
+            var firstTag = await _context.Tags.Where(x => x.Id == 1).ToListAsync();
+
+            Console.WriteLine($"fisrtTag = { firstTag[0].Name }");
+
+            var firstTag1 = await _context.Tags.FirstOrDefaultAsync();
+
+            Console.WriteLine($"firstTag1 = { firstTag1.Name }");
+
             return await _context.Tags.ToListAsync();
+
         }
 
         // GET: api/Tags/5
